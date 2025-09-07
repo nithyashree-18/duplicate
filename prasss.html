@@ -1,0 +1,43 @@
+<!-- Inside Post Food Section form -->
+<form id="post-food-form">
+  <div class="form-grid">
+    <div class="form-group">
+      <label for="food-title">Food Title *</label>
+      <input type="text" id="food-title" placeholder="e.g., Fresh Vegetables, Cooked Rice" required>
+    </div>
+    <div class="form-group">
+      <label for="food-quantity">Quantity *</label>
+      <input type="text" id="food-quantity" placeholder="e.g., 5 kg, Serves 10 people" required>
+    </div>
+
+    <!-- ✅ NEW Address Field -->
+    <div class="form-group full-width">
+      <label for="food-address">Address *</label>
+      <input type="text" id="food-address" name="address" class="input" placeholder="Pickup address" required>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="food-description">Description *</label>
+      <textarea id="food-description" rows="4" placeholder="Describe the food, cooking method, ingredients, etc." required></textarea>
+    </div>
+
+    <!-- ✅ NEW Expiry Date Field -->
+    <div class="form-group">
+      <label for="food-expiry">Expiry Date *</label>
+      <input type="date" id="food-expiry" name="expiryDate" class="input" required>
+    </div>
+
+    <div class="form-group">
+      <label for="food-photo">Food Photo</label>
+      <div class="file-input-wrapper">
+        <input type="file" id="food-photo" accept="image/*">
+        📷 Choose Photo
+      </div>
+    </div>
+    <div class="form-group full-width">
+      <label for="pickup-location">Pickup Location *</label>
+      <input type="text" id="pickup-location" placeholder="Specific location within your address" required>
+    </div>
+  </div>
+  <button type="submit" class="btn" style="margin-top:1rem;" id="post-food-btn">Post Food Donation</button>
+</form>

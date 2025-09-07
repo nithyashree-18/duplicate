@@ -1,0 +1,127 @@
+/* -------------------- FORM STYLING -------------------- */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.input, 
+textarea, 
+input[type="text"], 
+input[type="date"], 
+input[type="file"] {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border 0.2s;
+}
+
+.input:focus, 
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* File upload wrapper */
+.file-input-wrapper {
+  display: inline-block;
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #555;
+}
+.file-input-wrapper:hover {
+  background: #eaeaea;
+}
+.file-input-wrapper input[type="file"] {
+  display: none;
+}
+
+/* -------------------- FOOD ITEM CARDS -------------------- */
+.food-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.food-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.food-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.food-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.food-description {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.food-item .muted {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.food-actions {
+  margin-top: 0.5rem;
+}
+
+.food-actions .btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+/* -------------------- BUTTONS -------------------- */
+.btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.btn-small {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+}
